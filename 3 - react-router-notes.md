@@ -266,9 +266,3 @@ add another prop *replace* and supply boolean value **true** so it can be replac
 return <Navigation to="/" replace="true"/>
 
 ```
-
-
-
-
-
-
