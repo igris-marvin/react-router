@@ -3,6 +3,8 @@ import { Home } from "./pages/home/Home"
 import { Services } from "./pages/services/Services"
 import { About } from "./pages/about/About"
 import { RootLayout } from "./RootLayout"
+import { LoginLayout } from "./layout/LoginLayout"
+import { Login } from "./pages/login/Login"
 
 const browser_router = createBrowserRouter(
   createRoutesFromElements(
@@ -10,8 +12,8 @@ const browser_router = createBrowserRouter(
       <Route index element={<Home />}></Route>
       <Route path="/services" element={<Services />}></Route>
       <Route path="/about" element={<About />}></Route>
-      <Route path="/login">
-        
+      <Route path="/login" element={<LoginLayout />}>
+        <Route path="/login" element={<Login />}></Route>
       </Route>
     </Route>
   )
